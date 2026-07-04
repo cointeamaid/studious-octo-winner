@@ -1,0 +1,16 @@
+name: checks
+
+on: [push, pull_request]
+
+jobs:
+  syntax:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Make sure the JS still parses
+        run: |
+          node --check app.js
+          node --check cat.js
+      - name: Make sure cats.json is valid
+        run: node -e "JSON.parse(require('fs').readFileSync('cats.json','utf8'))"
+
