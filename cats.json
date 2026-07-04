@@ -1,0 +1,26 @@
+[
+  {
+    "id": "pancakes",
+    "name": "Mr. Pancakes",
+    "color": "orange tabby",
+    "bio": "Arrives at 7am sharp, rain or shine. The gold standard of reliability."
+  },
+  {
+    "id": "accountant",
+    "name": "The Accountant",
+    "color": "gray shorthair",
+    "bio": "Sits very still and appears to be silently auditing your life choices."
+  },
+  {
+    "id": "questionmark",
+    "name": "??",
+    "color": "black",
+    "bio": "Appeared exactly once. Present in thoughts, absent from porch."
+  },
+  {
+    "id": "duchess",
+    "name": "Duchess",
+    "color": "calico",
+    "bio": "Will not eat unless the food is arranged to her liking. High-maintenance royalty."
+  }
+]
