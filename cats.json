@@ -3,24 +3,36 @@
     "id": "pancakes",
     "name": "Mr. Pancakes",
     "color": "orange tabby",
-    "bio": "Arrives at 7am sharp, rain or shine. The gold standard of reliability."
+    "bio": "Arrives at 7am sharp, rain or shine. The gold standard of reliability.",
+    "personality": "friendly",
+    "palette": { "fur": "#e8913f", "patch": "#c56a1e", "belly": "#f6d5a8", "eye": "#4b8b3b" },
+    "tabby": true
   },
   {
     "id": "accountant",
     "name": "The Accountant",
     "color": "gray shorthair",
-    "bio": "Sits very still and appears to be silently auditing your life choices."
+    "bio": "Sits very still and appears to be silently auditing your life choices.",
+    "personality": "judgmental",
+    "palette": { "fur": "#9aa0a6", "patch": "#70767c", "belly": "#cfd3d7", "eye": "#c9a227" },
+    "tabby": false
   },
   {
     "id": "questionmark",
     "name": "??",
     "color": "black",
-    "bio": "Appeared exactly once. Present in thoughts, absent from porch."
+    "bio": "Appeared exactly once. Present in thoughts, absent from porch.",
+    "personality": "mysterious",
+    "palette": { "fur": "#332f39", "patch": "#48424f", "belly": "#413b48", "eye": "#7fe0a6" },
+    "tabby": false
   },
   {
     "id": "duchess",
     "name": "Duchess",
     "color": "calico",
-    "bio": "Will not eat unless the food is arranged to her liking. High-maintenance royalty."
+    "bio": "Will not eat unless the food is arranged to her liking. High-maintenance royalty.",
+    "personality": "diva",
+    "palette": { "fur": "#f0e6d2", "patch": "#e0872f", "belly": "#fbf4e6", "eye": "#3f7fb0" },
+    "calico": true
   }
 ]

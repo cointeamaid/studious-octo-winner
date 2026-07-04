@@ -3,61 +3,46 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Porch Cats — Neighborhood Stray Tracker</title>
-  <link rel="stylesheet" href="style.css" />
+  <title>Cat Lab — a little home for cat tools</title>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="portal.css" />
 </head>
 <body>
-  <header>
-    <h1>🐾 Porch Cats</h1>
-    <p class="tagline">A field log of the neighborhood's stray cats and their unreliable breakfast habits.</p>
+  <nav class="topnav">
+    <a class="brand" href="index.html">🐾 Cat<span>Lab</span></a>
+    <a class="back" href="https://github.com/cointeamaid/studious-octo-winner">View source</a>
+  </nav>
+
+  <header class="hero">
+    <h1>Cat Lab</h1>
+    <p class="tagline">A small collection of tools for the neighborhood's cats.</p>
   </header>
 
-  <main>
-    <section class="panel">
-      <h2>Log a sighting</h2>
-      <form id="sighting-form">
-        <label>
-          Cat
-          <select id="cat-select" required></select>
-        </label>
-        <label>
-          Time seen
-          <input type="time" id="time-input" required />
-        </label>
-        <label>
-          Mood
-          <select id="mood-input">
-            <option>Aloof</option>
-            <option>Hungry</option>
-            <option>Judgmental</option>
-            <option>Affectionate</option>
-            <option>Suspicious</option>
-          </select>
-        </label>
-        <label class="wide">
-          Notes
-          <input type="text" id="notes-input" placeholder="e.g. demanded tribute, then left" />
-        </label>
-        <button type="submit">Add sighting</button>
-      </form>
-    </section>
+  <main class="grid">
+    <a class="tool-card" href="virtual-cat.html">
+      <div class="tool-emoji">🐱</div>
+      <h2>Cat Companion</h2>
+      <p>Adopt one of the roster cats and keep it fed, happy, and rested. It reacts with its own personality and remembers how you treat it.</p>
+      <span class="tool-go">Open →</span>
+    </a>
 
-    <section class="panel">
-      <h2>Leaderboard <span class="subtle">most reliable breakfast guests</span></h2>
-      <ol id="leaderboard"></ol>
-    </section>
+    <a class="tool-card" href="porch-cats.html">
+      <div class="tool-emoji">📋</div>
+      <h2>Porch Cats Tracker</h2>
+      <p>Log real sightings of the strays: who showed up, when, and their mood. Keeps a leaderboard of the most reliable breakfast guests.</p>
+      <span class="tool-go">Open →</span>
+    </a>
 
-    <section class="panel">
-      <h2>Recent sightings</h2>
-      <ul id="sightings-list"></ul>
-      <button id="reset-btn" class="ghost">Clear log</button>
-    </section>
+    <div class="tool-card soon">
+      <div class="tool-emoji">🗺️</div>
+      <h2>Territory Map</h2>
+      <p>A map of which cat rules which corner of the block. Coming whenever the cats agree on borders.</p>
+      <span class="tool-go">Coming soon</span>
+    </div>
   </main>
 
-  <footer>
-    <p>Kept by a concerned citizen. Cats have not consented to this tracking.</p>
+  <footer class="site">
+    <p>Kept by a concerned citizen. Cats have not consented to any of this.</p>
   </footer>
-
-  <script src="app.js"></script>
 </body>
 </html>

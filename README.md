@@ -1,27 +1,40 @@
-# 🐾 Porch Cats
+# 🐾 Cat Lab
 
-A small, no-backend web app for logging sightings of the neighborhood's stray cats
-and keeping a running leaderboard of who's the most reliable breakfast guest.
+A small, no-backend collection of browser tools for the neighborhood's cats.
+Open `index.html` and pick a tool.
 
-It started when I noticed the same orange tabby showing up on my porch every
-morning at 7am sharp, rain or shine. I named him **Mr. Pancakes**. Then came a
-gray one I call **The Accountant**, because he sits very still and seems to be
-quietly judging my life choices. This is where I keep track of them.
+## Tools
 
-## Features
+### 🐱 Cat Companion (`virtual-cat.html`)
+Adopt one of the roster cats and care for it like a virtual pet:
 
-- Log a sighting: which cat, what time, their mood, and a note
-- Automatic leaderboard ranking cats by number of visits
-- Recent-sightings feed
-- Everything saves in your browser (localStorage) — no server needed
-- Cat roster loaded from a simple `cats.json` file
+- Four cats to choose from, each with a distinct **personality** (friendly,
+  judgmental, cryptic, or high-maintenance) that changes how it reacts.
+- Four needs that drift over **real time**: Hunger, Energy, Happiness, and a
+  slowly-growing Bond.
+- Care actions: **Feed, Treat, Pet, Play, Brush, Nap, Talk** — each nudges the
+  stats (playing is fun but tiring; napping restores energy; petting builds bond).
+- The cat's **face and mood change** with its state (content, happy, hungry,
+  grumpy, sleepy), drawn as inline SVG.
+- Saves per-cat in your browser, so each cat remembers how you treat it.
+
+### 📋 Porch Cats Tracker (`porch-cats.html`)
+Log real-world sightings of the strays — who showed up, when, and their mood —
+and keep a leaderboard of the most reliable breakfast guests.
+
+## The roster
+
+| Cat | Breed | Temperament |
+|-----|-------|-------------|
+| Mr. Pancakes | orange tabby | Friendly & reliable — shows up at 7am sharp |
+| The Accountant | gray shorthair | Dry & judgmental — silently auditing you |
+| ?? | black | Cryptic & elusive — appeared exactly once |
+| Duchess | calico | High-maintenance royalty — very particular |
 
 ## Run it
 
-It's just static files. Either:
-
-- Open `index.html` in your browser, **or**
-- Serve the folder (so `cats.json` loads cleanly):
+It's just static files. Either open `index.html` directly, or serve the folder
+so `cats.json` loads cleanly:
 
 ```
 python3 -m http.server 8000
@@ -31,15 +44,11 @@ then visit `http://localhost:8000`.
 
 ## Files
 
-| File | What it does |
-|------|--------------|
-| `index.html` | The page structure |
-| `style.css` | Styling |
-| `app.js` | All the logic (rendering, saving, leaderboard) |
-| `cats.json` | The roster of tracked cats |
-
-## The current standings
-
-Mr. Pancakes holds a commanding lead. The Accountant is a distant second.
-A mysterious black cat known only as `??` has appeared exactly once and haunts
-my thoughts. More features coming whenever the cats feel like cooperating.
+| File | Purpose |
+|------|---------|
+| `index.html` | The Cat Lab portal / home page |
+| `virtual-cat.html` + `cat.css` + `cat.js` | The Cat Companion virtual pet |
+| `porch-cats.html` + `style.css` + `app.js` | The sighting tracker |
+| `base.css` | Shared theme |
+| `portal.css` | Portal styles |
+| `cats.json` | The shared cat roster (names, colors, personalities, art palettes) |

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Porch Cats — Neighborhood Stray Tracker</title>
+  <link rel="stylesheet" href="base.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav class="topnav">
+    <a class="brand" href="index.html">🐾 Cat<span>Lab</span></a>
+    <a class="back" href="index.html">← Back to Cat Lab</a>
+  </nav>
+
+  <header class="hero">
+    <h1>📋 Porch Cats</h1>
+    <p class="tagline">A field log of the neighborhood's stray cats and their unreliable breakfast habits.</p>
+  </header>
+
+  <main>
+    <section class="panel">
+      <h2>Log a sighting</h2>
+      <form id="sighting-form">
+        <label>
+          Cat
+          <select id="cat-select" required></select>
+        </label>
+        <label>
+          Time seen
+          <input type="time" id="time-input" required />
+        </label>
+        <label>
+          Mood
+          <select id="mood-input">
+            <option>Aloof</option>
+            <option>Hungry</option>
+            <option>Judgmental</option>
+            <option>Affectionate</option>
+            <option>Suspicious</option>
+          </select>
+        </label>
+        <label class="wide">
+          Notes
+          <input type="text" id="notes-input" placeholder="e.g. demanded tribute, then left" />
+        </label>
+        <button type="submit">Add sighting</button>
+      </form>
+    </section>
+
+    <section class="panel">
+      <h2>Leaderboard <span class="subtle">most reliable breakfast guests</span></h2>
+      <ol id="leaderboard"></ol>
+    </section>
+
+    <section class="panel">
+      <h2>Recent sightings</h2>
+      <ul id="sightings-list"></ul>
+      <button id="reset-btn" class="ghost">Clear log</button>
+    </section>
+  </main>
+
+  <footer class="site">
+    <p>Kept by a concerned citizen. Cats have not consented to this tracking.</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

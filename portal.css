@@ -1,0 +1,31 @@
+.grid {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.1rem;
+}
+
+.tool-card {
+  display: block;
+  background: var(--panel);
+  border: 1px solid var(--line);
+  border-radius: 14px;
+  padding: 1.4rem;
+  text-decoration: none;
+  color: var(--ink);
+  transition: transform 0.12s ease, border-color 0.12s ease;
+}
+.tool-card:hover {
+  transform: translateY(-3px);
+  border-color: var(--accent);
+}
+.tool-card .tool-emoji { font-size: 2.4rem; }
+.tool-card h2 { margin: 0.6rem 0 0.4rem; font-size: 1.25rem; }
+.tool-card p { margin: 0 0 1rem; color: var(--muted); font-size: 0.92rem; }
+.tool-card .tool-go { color: var(--accent); font-weight: 600; font-size: 0.9rem; }
+
+.tool-card.soon { opacity: 0.6; cursor: default; }
+.tool-card.soon:hover { transform: none; border-color: var(--line); }
+.tool-card.soon .tool-go { color: var(--muted); }
